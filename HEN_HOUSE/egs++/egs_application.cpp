@@ -55,7 +55,9 @@
 #include <fstream>
 #include <sys/types.h>
 #include <sys/stat.h>
+#ifndef _WINDOWS
 #include <unistd.h>
+#endif
 
 using namespace std;
 

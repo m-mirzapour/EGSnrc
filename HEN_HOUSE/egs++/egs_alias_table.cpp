@@ -298,6 +298,9 @@ EGS_Float EGS_AliasTable::sample(EGS_RandomGenerator *rndm) const {
     return res;
 }
 
+#ifdef _WINDOWS
+#define small small
+#endif
 
 EGS_SimpleAliasTable::EGS_SimpleAliasTable(int N, const EGS_Float *f) : n(0) {
 
