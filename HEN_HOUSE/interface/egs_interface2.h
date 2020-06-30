@@ -815,7 +815,7 @@ extern __extc__ void egsRandomInit(const EGS_I32 *s1, const EGS_I32 *s2);
 extern __extc__ void egsRandomGet(EGS_Float *ranno);
 
 /*! Shorthand notation for the \c egs_fill_rndm_array mortran subroutine */
-#define egsFillRandomArray F77_OBJ_(egs_fill_rndm_array,EGS_GET_RNDM_ARRAY)
+#define egsFillRandomArray F77_OBJ_(egs_fill_rndm_array,EGS_FILL_RNDM_ARRAY)
 
 /*! \brief Get \a n random numbers stored in the array pointed to by \a rarray
 
