@@ -906,10 +906,9 @@ int EGS_InputPrivate::addContent(istream &in) {
     removeEmptyLines(input);
     vector<string> start_keys, stop_keys;
     int p = 0;
-    int ep = input.size();
     string what;
     int ie;
-    while ((p=findStart(p,ep,start_key_begin,start_key_end,input,what,ie))>=0) {
+    while ((p=findStart(p, input.size(),start_key_begin,start_key_end,input,what,ie))>=0) {
         string the_start = start_key_begin;
         string the_end = stop_key_begin;
         for (int j=0; j<what.size(); j++) {
