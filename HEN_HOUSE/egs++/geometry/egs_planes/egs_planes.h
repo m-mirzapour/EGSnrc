@@ -50,8 +50,12 @@ using std::vector;
     #ifdef BUILD_PLANES_DLL
         #define EGS_PLANES_EXPORT __declspec(dllexport)
     #else
-        #define EGS_PLANES_EXPORT __declspec(dllimport)
-    #endif
+		#ifdef VISUAL_STUDIO
+			#define EGS_PLANES_EXPORT
+		#else
+			#define EGS_PLANES_EXPORT __declspec(dllimport)
+		#endif
+	#endif
     #define EGS_PLANES_LOCAL
 
 #else
